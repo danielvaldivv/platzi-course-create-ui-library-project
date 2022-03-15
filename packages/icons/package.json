@@ -20,7 +20,7 @@
     "url": "git+https://github.com/danielvaldivv/platzi-course-create-ui-library-project.git"
   },
   "scripts": {
-    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../.babelrc src/ --out-dir dist --copy-files --ignore '**/*.spec.js' --no-copy-ignored"
+    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../.babelrc src/ --out-dir dist --copy-files --no-copy-ignored"
   },
   "bugs": {
     "url": "https://github.com/danielvaldivv/platzi-course-create-ui-library-project/issues"
