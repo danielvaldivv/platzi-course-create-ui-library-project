@@ -2,10 +2,11 @@ import { forwardRef } from 'react';
 import { cx, css } from '@emotion/css'
 
 const buttonStyles = css`
-  backgroundColor: 'whiteSmoke'
-  `
-  
-  const Button = forwardRef(function Button(props, ref) {
+  background-color:'whiteSmoke';
+  border-radius: 'red';
+`
+
+const Button = forwardRef(function Button(props, ref) {
   const { className, ...otherProps } = props;
   return (
     <button
