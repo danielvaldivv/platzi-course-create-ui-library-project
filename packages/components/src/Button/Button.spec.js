@@ -43,6 +43,20 @@ describe('@components/Button', () => {
     expect(ButtonStyleTest).toHaveStyle(`width: 100%`);
   });
 
+  it('Given the Button, when the props provide height attribute then the component will take those style', () => {
+    // arrange
+    const { getByRole } = render(
+        <Button role="button"  height={'30px'}/>
+    );
+
+    // act
+    const ButtonStyleTest = getByRole('button');
+
+    // assert
+    expect(ButtonStyleTest).toBeDefined();
+    expect(ButtonStyleTest).toHaveStyle(`height: 30px`);
+  });
+
   // it('Given a onClick prop it should be called when clicked', () => {
   //   // arrange
   //   const handleClick = jest.fn();

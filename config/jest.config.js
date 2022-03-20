@@ -6,8 +6,6 @@ module.exports = {
   moduleNameMapper: {
     '@platzi-course-project-ui/components': '<rootDir>/packages/components',
     '@platzi-course-project-ui/components/*': '<rootDir>/packages/components/$1',
-    // '@platzi-course-project-ui/icons': '<rootDir>/packages/icons',
-    // '@platzi-course-project-ui/icons/*': '<rootDir>/packages/icons/$1'
   },
   modulePathIgnorePatterns: ['dist']
 };
