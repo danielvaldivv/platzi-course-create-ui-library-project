@@ -5,9 +5,10 @@ const buttonStyles = (width) => css`
   background-color:'whiteSmoke';
   border-radius: 'red';
   width: ${width || '30%' };
+  text-align: center;
 `
 
-const Button = forwardRef(function Button(props, ref) {
+const Button = forwardRef((props, ref) => {
   const { className, width, ...otherProps } = props;
   return (
     <button
