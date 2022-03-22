@@ -7,6 +7,6 @@ module.exports = {
     alias: {
       '@platzi-course-project-ui/components': path.resolve(__dirname, './packages/components/src'),
     },
-    extensions: ['.js'],x
+    extensions: ['.js'],
   },
 };

@@ -57,22 +57,4 @@ describe('@components/Button', () => {
     expect(ButtonStyleTest).toHaveStyle(`height: 30px`);
   });
 
-  // it('Given a onClick prop it should be called when clicked', () => {
-  //   // arrange
-  //   const handleClick = jest.fn();
-
-  //   const { getByRole } = render(
-  //     <ThemeProvider theme={createTheme()}>
-  //       <Button type="button" onClick={handleClick}>
-  //         ClickMe
-  //       </Button>
-  //     </ThemeProvider>,
-  //   );
-
-  //   // act
-  //   fireEvent.click(getByRole('button', { name: /ClickMe/i }));
-
-  //   // assert
-  //   expect(handleClick).toHaveBeenCalled();
-  // });
 });

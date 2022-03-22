@@ -20,10 +20,13 @@
     "url": "git+https://github.com/danielvaldivv/platzi-course-create-ui-library-project.git"
   },
   "scripts": {
-    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../.babelrc src/ --out-dir dist --copy-files --no-copy-ignored"
+    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../babel.config.js src/ --out-dir dist --copy-files --ignore '**/*.spec.js' --no-copy-ignored"
   },
   "bugs": {
     "url": "https://github.com/danielvaldivv/platzi-course-create-ui-library-project/issues"
   },
-  "homepage": "https://github.com/danielvaldivv/platzi-course-create-ui-library-project#readme"
+  "homepage": "https://github.com/danielvaldivv/platzi-course-create-ui-library-project#readme",
+  "dependencies": {
+    "prop-types": "^15.8.1"
+  }
 }
