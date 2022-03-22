@@ -1,11 +1,12 @@
 {
   "name": "@platzi-test/components",
+  "private":"false",
   "version": "0.1.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "danielvaldivv <dvaldiviesomerino.drvm@gmail.com>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielvaldivv/platzi-course-create-ui-library-project.git"
