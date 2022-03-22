@@ -5,7 +5,7 @@
   "keywords": [],
   "author": "danielvaldivv <dvaldiviesomerino.drvm@gmail.com>",
   "license": "MIT",
-  "main": "./dist/index.js",
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielvaldivv/platzi-course-create-ui-library-project.git"
