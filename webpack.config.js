@@ -5,7 +5,7 @@ module.exports = {
   resolve: {
     modules: [__dirname, 'node_modules'],
     alias: {
-      '@platzi-course-project-ui/components': path.resolve(__dirname, './packages/components/src'),
+      '@platzi-course-project-ui': path.resolve(__dirname, './src'),
     },
     extensions: ['.js'],
   },

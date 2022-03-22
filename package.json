@@ -1,8 +1,18 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "@platzi-test/components",
+  "version": "0.1.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "danielvaldivv <dvaldiviesomerino.drvm@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielvaldivv/platzi-course-create-ui-library-project.git"
+  },
   "scripts": {
-    "test": "jest --config ./config/jest.config.js"
+    "test": "jest --config ./config/jest.config.js",
+    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ./babel.config.js src/ --out-dir dist --copy-files --ignore '**/*.spec.js' --no-copy-ignored"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -15,7 +25,6 @@
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
-    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
     "babel-preset-minify": "^0.5.1",
     "eslint": "^8.11.0",
@@ -26,15 +35,12 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "jest": "^27.5.1",
-    "lerna": "4.0.0",
     "prettier": "^2.5.1",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
