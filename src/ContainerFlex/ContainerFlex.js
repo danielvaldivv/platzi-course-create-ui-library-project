@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { cx, css } from '@emotion/css'
 import { PropTypes } from 'prop-types';
 
-const ContainerFlexStyles = (width, height, bgColor, flexDirection,  alignContent, justifyContent, alignItems) => css`
+const ContainerFlexStyles = (width, height, bgColor, flexDirection,  alignContent, justifyContent, alignItems, gap) => css`
   background-color: ${bgColor};
   width: ${width || '100%' };
   height: ${height || '100%'};
@@ -10,7 +10,8 @@ const ContainerFlexStyles = (width, height, bgColor, flexDirection,  alignConten
   flex-direction: ${flexDirection};
   align-content: ${alignContent } ;
   justify-content: ${justifyContent} ;
-  align-items: ${alignContent };
+  align-items: ${alignItems };
+  gap: ${gap};
 `
 
 const ContainerFlex = forwardRef((props, ref) => {
@@ -23,12 +24,13 @@ const ContainerFlex = forwardRef((props, ref) => {
     alignContent,
     justifyContent, 
     alignItems,
+    gap,
     ...otherProps } = props;
   return (
     <section
       ref={ref}
       {...otherProps}
-      className={cx(ContainerFlexStyles(width, height, bgColor, flexDirection, alignContent, justifyContent, alignItems), className)}
+      className={cx(ContainerFlexStyles(width, height, bgColor, flexDirection, alignContent, justifyContent, alignItems, gap), className)}
     />
   );
 });
