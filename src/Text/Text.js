@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 const TextStyles = (fontWeight, fontSize, lineHeight) => css`
   font-weight: ${fontWeight || 700};
-  font-size: ${fontSize || '30px'};
-  line-height: ${lineHeight || '35px'};
+  font-size: ${fontSize || '20px'};
+  line-height: ${lineHeight || '25px'};
 `
 
 const Text = forwardRef((props, ref) => {
